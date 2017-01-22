@@ -1,11 +1,82 @@
-<html>
 <!DOCTYPE html>
-<title>Myhomepage</title>
+<html>
 <head>
-hello ハロー<br>
+<!--  <meta charset="utf-8">-->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML5 Sample code</title>
+  <link rel="stylesheet" href="css/sanitize.css" media="screen">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="apple-touch-icon" href="images/lv2.png">
 </head>
 <body>
-world ワールド<br>
- 
+  <header>
+    <h1><a href="index.html">HTML5 Sample code集</a></h1>
+  </header>
+  <main>
+    <h2>2.2 WebブラウザにおけるJavaScript API</h2>
+    <h3>2.2.5 テスト・デバッグ</h3>
+    <h4>Consoleオブジェクト</h4>
+    <p>開発者ツール(F12)のコンソールで表示を確認してください。</p>
+    <p>console.dirxml()はブラウザ(バージョン)によって表示が異なることがあります。</p>
+    <ol id="ol">
+      <li>dirxml用サンプル</li>
+      <li>コンソールにDOM要素として表示されます。</li>
+    </ol>
+    <pre>
+      console.group('ログ出力');
+      console.debug('debug メッセージ');
+      console.error('error メッセージ');
+      console.info('info メッセージ');
+      console.log('log メッセージ');
+      console.warn('warn メッセージ');
+      console.groupEnd();
+
+      console.group('特殊な出力');
+      /* dirxmlによるHTML要素の表示 */
+      console.dirxml(document.getElementById('ol'));
+      /* traceによるスタックトレースの表示 */
+      function trace_func1() {
+        trace_func2();
+      }
+      function trace_func2() {
+        console.trace();
+      }
+      trace_func1();
+      /* assert */
+      console.assert(false,'assert false メッセージ');
+      console.assert(true ,'assert true メッセージ');
+      console.groupEnd();
+    </pre>
+    <script type="text/javascript">
+      console.group('ログ出力');
+      console.debug('debug メッセージ');
+      console.error('error メッセージ');
+      console.info('info メッセージ');
+      console.log('log メッセージ');
+      console.warn('warn メッセージ');
+      console.groupEnd();
+
+      console.group('特殊な出力');
+      /* dirxmlによるHTML要素の表示 */
+      console.dirxml(document.getElementById('ol'));
+      /* 同じ要素をconsole.log()で表示してみる */
+      console.log(document.getElementById('ol'));
+      /* traceによるスタックトレースの表示 */
+      function trace_func1() {
+        trace_func2();
+      }
+      function trace_func2() {
+        console.trace();
+      }
+      trace_func1();
+      /* assert */
+      console.assert(false,'assert false メッセージ');
+      console.assert(true ,'assert true メッセージ');
+      console.groupEnd();
+
+    </script>
+  </main>
+  <footer></footer>
 </body>
 </html>

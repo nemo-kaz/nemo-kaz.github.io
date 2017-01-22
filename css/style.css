@@ -1,0 +1,74 @@
+html {
+  font-size: calc(6px + 1vw);
+}
+
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border:solid 1px black;
+  padding:0.2rem;
+  background-color: lightgray;
+  border-radius: 0.5em;
+}
+
+input {
+  border:solid 1px gray;
+  line-height: 1.8rem;
+}
+
+header {
+  min-height: 3rem;
+  background: #db5424;
+  border-bottom: solid 2px black;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header h1 a {
+  color:black;
+  text-decoration: none;
+}
+
+main {
+  width: 90%;
+  min-height: calc(100vh - 6rem);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main pre {
+  background:lightgray;
+  border: solid 1px gray;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+footer {
+  height: 3rem;
+  background: #db5424;
+  border-top: solid 2px black;
+}
+
+footer a {
+  margin-left: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+section {
+  font-size: 90%;
+}
