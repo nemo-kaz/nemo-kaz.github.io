@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" contents="はじめてのHTML">
+    <title>HTML5サンプル</title>
+    <link rel="stylesheet" href="Template.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="Template.js"></script>
+    <lin rel="stylesheet" href="Template.css">
+
+  </head>
+  <body>
+    <h1>大見出し</h1>
+    <p>HTML5で<br>作成しました！</p>
+    <img src="Template.jpg" width="200" height="150" alt="話は聞かせてもらった">
+    <p>Google検索は<a href="http://www.google.com/" target="_blank">こちら</a>から別ウィンドウが開きます</p>
+    <ul>
+    <li>まるいち</li>
+    <li>まるに</li>
+    </ul>
+    <ol>
+    <div id="special"><li>いちばん</li></div>
+    <span class="niban"><li>にばん</li></span>
+    </ol>
+    <h2>テーブル</h2>
+    <table>
+    <tr><th>項番いち</th><th>項番2</th><th>項番3</th></tr>
+    <tr><th>1000</th><th>2000</th><th>3000</th></tr>
+    </table>
+    <h2>お問い合せフォーム</h2>
+    <form action="contact.php" method="post">
+    <p>お名前: <input type="text" name="name" size="20" maxlength="10" value="ななしさん"></p>
+    <p>パスワード: <input type="password" name="password" size="20" maxlength="10" value=""></p>
+    
+    <p>メモ: <textarea  name="memo" rows=4 cols="40 ">メモ</textarea></p>
+    <p>機種チェック: 
+      <input type ="checkbox" name="mobile" value="1" checked> iPhone
+      <input type ="checkbox" name="mobile" value="2"> Android
+      <input type ="checkbox" name="mobile" value="3"> Windows Phone
+    </p>
+    <p>写真<input type="file" name="picture"></p>
+    <p><input type="submit" value="送信"></p>
+    
+    </form>
+    
+  </body>
+  <!-- メモ -->
+</html>
